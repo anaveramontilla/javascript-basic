@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <!-- Hoja de estilo -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="titulo">
+            <h1>Calculadora</h1>
+        </div>
+        <div class="central">
+            <div class="inputs">
+                <input type="text" class="caja" id="cajaTexto1" />
+                <input type="text" class="caja" id="cajaTexto2" />
+            </div>
+            <div class="botones">
+                <button type="button" onClick="sumar()" class="fa fa-plus btn"></button>
+                <button type="button" onClick="restar()" class="fa fa-minus btn"></button>
+                <button type="button" onClick="multiplicar()" class="fa fa-times btn"></button>
+                <button type="button" onClick="dividir()" class="fa fa-divide btn"></button>
+            </div>
+        </div>
+        <div class="resultado">
+            <p id="mostrarResultado"></p>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
